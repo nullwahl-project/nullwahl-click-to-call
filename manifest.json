@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Nullwahl – Click-to-Call",
+  "version": "2.0.0",
+  "description": "Erkennt Telefonnummern mit führender Null und öffnet sie per tel:-Link in einem Softphone. Internationale Nummern optional.",
+  "permissions": [
+    "storage"
+  ],
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "style.css"
+      ],
+      "run_at": "document_idle",
+      "all_frames": true,
+      "match_about_blank": true
+    }
+  ]
+}

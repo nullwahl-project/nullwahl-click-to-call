@@ -1,0 +1,7 @@
+a.linphone-nullwahl-link {
+  color: #0867b1 !important;
+  text-decoration: underline dotted !important;
+  text-underline-offset: 2px;
+  cursor: pointer !important;
+}
+a.linphone-nullwahl-link:hover { text-decoration: underline solid !important; }
